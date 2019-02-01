@@ -55,11 +55,11 @@ output_path = args['output']
 # Verify the input paths, print error and exit if not found
 if not Path(ann_path).exists():
 
-    exit("[ERROR] Cannot find {}. Check the input to -a!".format(ann_path))
+    sys.exit("[ERROR] Cannot find {}. Check the input to -a!".format(ann_path))
 
 if not Path(images_path).exists():
 
-    exit("[ERROR] Cannot find {}. Check the input to -i!".format(images_path))
+    sys.exit("[ERROR] Cannot find {}. Check the input to -i!".format(images_path))
 
 # Set review mode initially to false
 review = False
